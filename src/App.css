@@ -1,0 +1,27 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  background-color: red;
+  padding: 1rem 0;
+}
+
+.navbar *{
+  color: white;
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
+
+.active{
+  color: blue;
+}

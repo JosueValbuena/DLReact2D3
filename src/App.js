@@ -1,9 +1,12 @@
 import './App.css';
+import NavBar from './routers/NavBar';
+import Routers from './routers/Routers';
 
 function App() {
   return (
     <div className="App">
-      <h1>sdasd</h1>
+      <NavBar />
+      <Routers />
     </div>
   );
 }
