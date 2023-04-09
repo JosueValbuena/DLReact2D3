@@ -17,8 +17,8 @@ const Home = () => {
       <div>Selecciona un Pokemon</div>
       <select onChange={(e) => setpokemons(e.target.value)}>
         <option disabled selected>Seleccionar</option>
-        {data.map(ele =>
-          <option value={ele.name} key={ele.name}>{ele.name}</option>)}
+        {data.map((ele, index) =>
+          <option value={ele.name} key={index}>{ele.name}</option>)}
       </select>
       <button onClick={handleClick}>Ver detalles</button>
     </div>
