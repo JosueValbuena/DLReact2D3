@@ -25,3 +25,48 @@ html {
 .active{
   color: blue;
 }
+
+.home_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.home_container_img{
+  width: 30rem;
+} 
+
+.home_container_img > img{
+  width: 100%;
+}
+
+.pokemon_stats_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.pokemon_stats_img{
+  width: 20rem;
+}
+
+.pokemon_stats_container img{
+  width: 100%;
+}
+
+.pokemon_stats_list{
+  font-weight: bold;
+}
+
+.pokemon_stats_list > li:nth-child(odd){
+  background-color: rgba(158, 240, 171, 0.589);
+  padding: 0.5rem;
+}
+
+.pokemon_stats_list > li:nth-child(even){
+  background-color: rgb(228, 163, 163);
+  padding: 0.5rem;
+}

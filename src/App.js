@@ -12,7 +12,7 @@ function App() {
     getData();
   }, [])
 
-  const urlPokeApi = "https://pokeapi.co/api/v2/pokemon/?limit=99&offset=0"
+  const urlPokeApi = "https://pokeapi.co/api/v2/pokemon/?limit=151&offset=0"
 
   const getData = async () => {
     const res = await fetch(urlPokeApi);

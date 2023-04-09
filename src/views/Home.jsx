@@ -13,14 +13,15 @@ const Home = () => {
 
 
   return (
-    <div>
+    <div className='home_container'>
+      <div className='home_container_img'><img src="./assets/img/pokemon-logo.png" alt="" /></div>
       <div>Selecciona un Pokemon</div>
-      <select onChange={(e) => setpokemons(e.target.value)}>
-        <option disabled selected>Seleccionar</option>
+      <select defaultValue={"default"} onChange={(e) => setpokemons(e.target.value)}>
+        <option value="default" disabled>Seleccionar</option>
         {data.map((ele, index) =>
           <option value={ele.name} key={index}>{ele.name}</option>)}
       </select>
-      <button onClick={handleClick}>Ver detalles</button>
+      <button disabled={!pokemons} onClick={handleClick}>Ver detalles</button>
     </div>
   )
 }
